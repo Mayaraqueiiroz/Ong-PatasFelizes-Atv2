@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos — Patas Felizes</title>
+  <link rel="icon" href="img/pata.jpg" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/pata.jpg" alt="Logo Patas Felizes" width="80"></a>
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Nossos Projetos</h1>
+    <p>Conheça as iniciativas da <strong>Patas Felizes</strong> que ajudam a salvar e transformar vidas todos os dias.</p>
+
+    <section class="project-list" aria-label="Lista de projetos">
+      <article class="project" aria-labelledby="proj1-title">
+        <figure>
+          <img src="img/acariciado.png" alt="Pessoa acariciando cachorro resgatado">
+          <figcaption>Feiras e eventos de adoção realizados mensalmente.</figcaption>
+        </figure>
+        <h2 id="proj1-title">Projeto Adoção Responsável</h2>
+        <p>Incentivamos a adoção consciente e responsável de cães e gatos, garantindo que cada um encontre um lar seguro e amoroso.</p>
+        <ul>
+          <li><strong>Animais adotados:</strong> 500 por ano</li>
+          <li><strong>Meta de doação:</strong> R$ 15.000</li>
+        </ul>
+        <p>
+          <a class="btn" href="cadastro.html#voluntario">Quero ser voluntário</a>
+          <a class="btn ghost" href="#">Doar</a>
+        </p>
+      </article>
+
+      <article class="project" aria-labelledby="proj2-title">
+        <figure>
+          <img src="img/resgate.png" alt="Cachorro sendo resgatado">
+          <figcaption>Equipe de voluntários em ação.</figcaption>
+        </figure>
+        <h2 id="proj2-title">Resgate e Reabilitação</h2>
+        <p>Nosso time realiza resgates de animais feridos ou abandonados, oferecendo tratamento veterinário e abrigo até que estejam prontos para adoção.</p>
+        <ul>
+          <li><strong>Animais resgatados:</strong> 200 por mês</li>
+          <li><strong>Meta de doação:</strong> R$ 25.000</li>
+        </ul>
+        <p>
+          <a class="btn" href="cadastro.html#voluntario">Ajudar no resgate</a>
+          <a class="btn ghost" href="#">Doar</a>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="ano"></span> Patas Felizes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

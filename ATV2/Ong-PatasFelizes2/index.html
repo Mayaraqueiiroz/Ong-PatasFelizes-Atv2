@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG Patas Felizes</title>
+  <link rel="icon" href="img/pata.jpg" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Página inicial da ONG Patas Felizes">
+        <img src="img/pata.jpg" alt="Logotipo Patas Felizes" width="80">
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Amor e esperança para cada patinha</h1>
+      <p>A ONG <strong>Patas Felizes</strong> atua no resgate, cuidado e adoção de cães e gatos em situação de vulnerabilidade. Faça parte dessa causa e transforme vidas!</p>
+
+      <div class="hero-image">
+        <img src="img/gato.png" alt="Cães e gatos felizes após adoção">
+      </div>
+
+      <p><a class="btn" href="projetos.html">Conheça nossos projetos</a></p>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Quem somos</h2>
+      <article>
+        <h3>Missão</h3>
+        <p>Resgatar, reabilitar e encontrar lares amorosos para cães e gatos abandonados.</p>
+      </article>
+      <article>
+        <h3>Visão</h3>
+        <p>Ser referência em proteção animal e incentivo à adoção responsável.</p>
+      </article>
+      <article>
+        <h3>Valores</h3>
+        <ul>
+          <li>Respeito à vida</li>
+          <li>Empatia e amor</li>
+          <li>Transparência e responsabilidade</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contato</h2>
+      <address>
+        <p>Rua Esperança, 45 — João Pessoa — PB</p>
+        <p>Telefone: <a href="tel:+5583999999999">(83) 99999-9999</a></p>
+        <p>Email: <a href="mailto:contato@patasfelizes.org">contato@patasfelizes.org</a></p>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="ano"></span> Patas Felizes. Todos os direitos reservados.</p>
+      <nav aria-label="Rodapé">
+        <ul>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

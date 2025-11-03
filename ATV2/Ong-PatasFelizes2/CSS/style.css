@@ -1,0 +1,347 @@
+/* ==========================
+   ESTILO GERAL
+========================== */
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fffaf5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6f61;
+}
+
+a:hover {
+  color: #ff4b3e;
+}
+
+/* ==========================
+   CABEÇALHO
+========================== */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  font-weight: 600;
+  color: #444;
+  transition: color 0.3s;
+}
+
+.main-nav a[aria-current="page"] {
+  color: #ff6f61;
+  border-bottom: 2px solid #ff6f61;
+}
+
+.main-nav a:hover {
+  color: #ff6f61;
+}
+
+/* ==========================
+   SEÇÃO HERO
+========================== */
+.hero {
+  background-image: url('animais-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+  border-radius: 0 0 40px 40px;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(2px);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 10px auto 25px;
+}
+
+/* --- IMAGEM ACIMA DO BOTÃO --- */
+.hero-image {
+  margin: 25px auto 35px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
+}
+
+/* --- BOTÕES --- */
+.btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #ff4b3e;
+}
+
+.btn.ghost {
+  background-color: transparent;
+  color: #ff6f61;
+  border: 2px solid #ff6f61;
+}
+
+.btn.ghost:hover {
+  background-color: #ff6f61;
+  color: white;
+}
+
+/* ==========================
+   SEÇÃO SOBRE
+========================== */
+.about {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #ff6f61;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.about article {
+  margin: 20px 0;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about li::before {
+  content: "🐾 ";
+}
+
+/* ==========================
+   CONTATO
+========================== */
+.contact {
+  background-color: #ffe9e4;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 40px auto;
+}
+
+.contact h2 {
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+.contact a {
+  color: #ff4b3e;
+  font-weight: bold;
+}
+
+/* ==========================
+   FORMULÁRIO (Cadastro)
+========================== */
+main {
+  padding: 40px 20px 60px;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 25px;
+}
+
+legend {
+  font-weight: 600;
+  color: #ff6f61;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #ff6f61;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255,111,97,0.3);
+}
+
+/* --- Botões de formulário --- */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  color: #ff6f61;
+  border: 2px solid #ff6f61;
+}
+
+.btn.secondary:hover {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+/* ==========================
+   PROJETOS
+========================== */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.project {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* --- IMAGENS DOS PROJETOS --- */
+.project img {
+  width: 80%;        /* diminui o tamanho geral */
+  max-width: 350px;  /* evita imagens muito grandes em telas largas */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.03);
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+footer {
+  background-color: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 30px 30px 0 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project img {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
